@@ -3,7 +3,7 @@ FROM python:3.8
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-RUN pip install --upgrade --no-cache-dir twine poetry
+RUN pip install --upgrade --no-cache-dir poetry
 
 WORKDIR /src
 COPY build_and_upload.sh .
